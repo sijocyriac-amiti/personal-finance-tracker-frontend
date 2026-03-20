@@ -121,3 +121,5 @@ This frontend expects the Spring Boot backend to be running separately and reach
 ## Container Build
 
 This repo also includes a `Containerfile` for Podman or Docker-based builds. The full local Podman stack is orchestrated from the backend repo via `compose.podman.yaml`.
+
+For Azure Container Apps, this image is built from ACR with `VITE_API_BASE_URL` set at build time so the frontend points at the deployed backend URL.
