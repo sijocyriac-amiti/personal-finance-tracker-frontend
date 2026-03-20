@@ -90,3 +90,7 @@ powershell -ExecutionPolicy Bypass -File .\run\stop-frontend.local.ps1
 ## Backend Dependency
 
 This frontend expects the Spring Boot backend to be running separately and reachable through `VITE_API_BASE_URL`.
+
+## Container Build
+
+This repo also includes a `Containerfile` for Podman or Docker-based builds. The full local Podman stack is orchestrated from the backend repo via `compose.podman.yaml`.
