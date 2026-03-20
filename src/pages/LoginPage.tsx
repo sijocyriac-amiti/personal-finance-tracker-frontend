@@ -22,7 +22,7 @@ export function LoginPage() {
       <div>
         <p className="eyebrow">Welcome back</p>
         <h2>Log in</h2>
-        <p>Use your email and password to continue into the finance workspace.</p>
+        <p>Use your email and password to continue securely into the finance workspace.</p>
       </div>
       <form
         className="form-grid"
