@@ -94,6 +94,12 @@ Run the smoke test:
 npm run test:e2e
 ```
 
+Run it against the deployed Azure frontend:
+
+```bash
+npm run test:e2e:azure
+```
+
 Run it headed:
 
 ```bash

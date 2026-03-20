@@ -3,7 +3,7 @@ import { expect, test } from '@playwright/test'
 test('user can sign up and reach the dashboard', async ({ page }) => {
   const uniqueEmail = `playwright-${Date.now()}@example.com`
 
-  await page.goto('/sign-up')
+  await page.goto('/sign-up', { waitUntil: 'domcontentloaded' })
 
   await page.getByLabel('Display Name').fill('Playwright User')
   await page.getByLabel('Email').fill(uniqueEmail)
