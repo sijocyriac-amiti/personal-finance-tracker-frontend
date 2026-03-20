@@ -73,6 +73,33 @@ npm run dev
 npm run build
 ```
 
+## E2E Test
+
+This repo includes a Playwright smoke test for the sign-up to dashboard flow.
+
+Prerequisites:
+
+- frontend available at `http://localhost:3000`
+- backend API available at `http://localhost:8080`
+
+Install browsers once:
+
+```bash
+npx playwright install chromium
+```
+
+Run the smoke test:
+
+```bash
+npm run test:e2e
+```
+
+Run it headed:
+
+```bash
+npm run test:e2e:headed
+```
+
 ## Local Deploy
 
 Deploy the frontend on `http://localhost:3000` so it matches the backend CORS allowlist:
